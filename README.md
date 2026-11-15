@@ -1,8 +1,9 @@
-# English School Admin Panel
+# Schedule & Payments Panel
 
-[![CI](https://github.com/dev-moroz/administrative-school-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/dev-moroz/administrative-school-panel/actions/workflows/ci.yml)
+[![CI](https://github.com/dev-moroz/schedule-payments-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/dev-moroz/schedule-payments-panel/actions/workflows/ci.yml)
 
-An admin panel for a small English school that teaches one-on-one: students, the lesson schedule, the remaining lesson balance and payments in different currencies.
+A scheduling and payments panel for one-on-one practice (tutors, coaches, instructors): clients, the session schedule, prepaid session packages and payments in different currencies.
+Built first for a small English school, so the source still uses the terms "student" and "lesson".
 
 - **Live demo:** https://schedule.devmoroz.space
 - **Landing page:** https://showcase.devmoroz.space (coming soon)
@@ -10,13 +11,13 @@ An admin panel for a small English school that teaches one-on-one: students, the
 > **Note:** this public source is a snapshot of an early stage (the core: students, calendar, ledger-based balance, payments, roles). The live demo runs the current version.
 
 ## The problem
-The teacher counted paid, held and rescheduled lessons by hand and reminded students manually that a package was ending.
-The panel keeps every lesson and payment in one place and computes the balance itself.
+Anyone who sells sessions in packages ends up counting paid, held and rescheduled sessions by hand and reminding clients manually that a package is ending.
+The panel keeps every session and payment in one place and computes the balance itself.
 
 ## Who it's for
-- **Teacher:** runs the daily work: schedule, lessons, payments.
+- **Practitioner** (a teacher, tutor or coach): runs the daily work: schedule, sessions, payments.
 - **Admin:** settings, currencies, roles and permissions.
-- **Students:** balance and reminders through a Telegram bot (planned).
+- **Clients:** balance and reminders through a Telegram bot (planned).
 
 ## How it works
 - **Payment and lesson credit.** A payment is recorded in its original currency; the amount divided by the lesson price suggests the number of lessons, which are credited in the same transaction.
