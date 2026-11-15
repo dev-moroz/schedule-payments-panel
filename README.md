@@ -4,13 +4,36 @@
 
 An admin panel for a small English school that teaches one-on-one: students, the lesson schedule, the remaining lesson balance and payments in different currencies.
 
-**Live demo: coming soon.**
+- **Live demo:** https://schedule.devmoroz.space
+- **Landing page:** https://showcase.devmoroz.space (coming soon)
+
+> **Note:** this public source is a snapshot of an early stage (the core: students, calendar, ledger-based balance, payments, roles). The live demo runs the current version.
 
 ## The problem
 The teacher counted paid, held and rescheduled lessons by hand and reminded students manually that a package was ending.
 The panel keeps every lesson and payment in one place and computes the balance itself.
 
-## Features
+## Who it's for
+- **Teacher:** runs the daily work: schedule, lessons, payments.
+- **Admin:** settings, currencies, roles and permissions.
+- **Students:** balance and reminders through a Telegram bot (planned).
+
+## How it works
+- **Payment and lesson credit.** A payment is recorded in its original currency; the amount divided by the lesson price suggests the number of lessons, which are credited in the same transaction.
+- **Lesson series.** Recurring series are generated from a template, alongside one-off lessons.
+- **Automatic charging and cancellation rules.** Held lessons are charged automatically; a late cancellation is charged by time-slot rules, and a checkbox on the lesson has the final say.
+- **Ledger-based balance.** Balance = the sum of ledger entries, with "low on lessons" and "debt" flags.
+
+## In the live demo, not in this source
+- Home page with widgets.
+- Student colors and ornaments.
+- Per-student reports.
+- Notifications.
+- Deleting a payment and a student.
+- Cancellation reasons and school rules in settings.
+- Dark theme.
+
+## Features in this source
 - Students with a default currency, lesson price and payment method.
 - Calendar (FullCalendar): recurring series from a template and one-off lessons; overlap checks; manual changes are kept when a series is regenerated.
 - Lesson balance as an operations ledger; it may go negative.
