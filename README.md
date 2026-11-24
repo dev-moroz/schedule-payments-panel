@@ -6,7 +6,7 @@ A scheduling and payments panel for one-on-one practice (tutors, coaches, instru
 Built first for a small English school, so the source still uses the terms "student" and "lesson".
 
 - **Live demo:** https://schedule.devmoroz.space
-- **Landing page:** https://showcase.devmoroz.space (coming soon)
+- **Landing page:** https://showcase.devmoroz.space
 
 > **Note:** this public source is a snapshot of an early stage (the core: students, calendar, ledger-based balance, payments, roles). The live demo runs the current version.
 
